@@ -1,0 +1,22 @@
+name: SCA - PR Gate (npm audit)
+
+on:
+  pull_request:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install deps
+        run: npm install --no-fund --no-audit
+
+      - name: Fail PR on Moderate/High/Critical vulns
+        run: npm audit --audit-level=moderate
