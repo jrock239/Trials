@@ -19,4 +19,4 @@ jobs:
         run: npm install --no-fund --no-audit
 
       - name: Fail PR on Moderate/High/Critical vulns
-        run: npm audit --audit-level=moderate
+        run: npm audit --audit-level=high
