@@ -1,0 +1,37 @@
+{
+  "name": "vulnscanttest01",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "minimist": "1.2.5"
+  }
+}
+
+
+{
+  "name": "vulnscanttest02",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "lodash": "4.17.20"
+  }
+}
+
+
+{
+  "name": "vulnscanttest03",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "moment": "2.29.1"
+  }
+}
+
+{
+  "name": "vulnscanttest04",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "axios": "1.5.1"
+  }
+}
